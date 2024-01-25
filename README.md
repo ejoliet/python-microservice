@@ -23,13 +23,25 @@ This Python microservice provides real-time weather information based on city na
 
 2. **Install Dependencies**
 
+   Use virtual env, create one
+   ```bash
+   python3 -m venv weather_env
+   ```
+   Then activate by executing
+   ```bash
+   source weather_env/bin/activate
+   ```
+   Deactivate:
+   ```bash
+   deactivate
+   ```
    Use pip to install the required Python packages:
 
    ```bash
-   pip install requests
+   pip3 install requests art json
    ```
 
-3. **API Key Configuration**
+4. **API Key Configuration**
 
    - Obtain an API key from [Tomorrow.io](https://www.tomorrow.io/weather-api/).
    - Create a `config.json` file in the same directory as your Python script with the following content:
@@ -49,7 +61,7 @@ This Python microservice provides real-time weather information based on city na
    Start the microservice by running:
 
    ```bash
-   python weather.py
+   python3 weather.py
    ```
 
    This will start the HTTP server on port 8000.
